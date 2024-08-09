@@ -8,7 +8,7 @@ int printColorMap(int n) {
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
             printf("%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[j]);
-            if((i * 5 + j - 1) == n){
+            if((i * 5 + j + 1) == n){
                 return i * j;
             }
         }
