@@ -24,9 +24,10 @@ void alertInCelcius(float farenheit) {
 }
 
 int main() {
-    alertInCelcius(400.5);
-    alertInCelcius(303.6);
+    alertInCelcius(400.5); //Greater than 200 not ok
+    alertInCelcius(303.6); //Less than 200 ok
     printf("%d alerts failed.\n", alertFailureCount);
+    assert(alertFailureCount==1);
     printf("All is well (maybe!)\n");
     return 0;
 }
